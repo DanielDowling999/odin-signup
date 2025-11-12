@@ -33,16 +33,25 @@ body{
     height:150px;
     top:30%;
     font-size:75px;
+    gap:10px;
 }
 
 
-#imagebox img{
+#sidebar-heading img {
+    height: 1.5em;
+    width: auto;
+    vertical-align: middle;
+}
+
+
+#imagebox .back{
     object-fit:cover;
     height:100%;
     width:100%;
     position:absolute;
     z-index:-1;
 }
+
 
 #contentbox{
     width:65%;
