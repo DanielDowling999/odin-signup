@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign-In</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="fullbox">
+    <div id="sidebar">
+        <img src="images/eyecatch.jpg">
+    </div>
+    <div id="sign-in">
+        <div id="sign-box">
+            <div class="section">
+                This is a real online service! Odin swears on his beard! You need my knowledge and wisdom to achieve your deepest dreams. So sign up NOW to get started.
+
+                You know you want to ;-) 
+            </div>
+            <div class="section">
+                Let's do this!
+                <form id="signinform">
+                    <div class="form-row">
+                        <div class="form-box">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div> 
+                    </div>
+                    <div class="form-row">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" pattern="\d{1,12}" required maxlength="12">
+                    </div>
+                    <div class="form-row">
+                        <label for="pass">PASSWORD<label>
+                        <input type="password" id="pass" name="pass" required>
+                        <label for="pass-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="pass-confirm" name="pass-confirm" required>
+                    </div>
+                </form>
+            </div>
+            <div class="section end">
+                <button type="submit" form="signinform">Create Account</button>
+                Already have an account? Log in
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
