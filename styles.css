@@ -1,16 +1,17 @@
 *{
-    outline: green solid 1px;
     box-sizing: border-box;
+
 }
 body{
     display:flex;
     align-items:center;
-    justify-content: center;
+    justify-content:center;
+    background-color:darkgray;
 }
 
 #fullbox{
     width:1450px;
-    height: 1024px;
+    height:1024px;
 
     display:flex;
     flex-direction: row;
@@ -20,6 +21,7 @@ body{
     width:35%;
     height:100%;
     position:relative;
+    z-index:0;
 }
 
 #sidebar-heading{
@@ -31,9 +33,79 @@ body{
     position:absolute;
     width:100%;
     height:150px;
-    top:30%;
+    top:18.3%;
     font-size:75px;
     gap:10px;
+}
+
+#credit{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:absolute;
+    bottom:1%;
+    width:100%;
+    z-index:1;
+    
+}
+
+#credit span{
+    color:white;
+    
+}
+
+.section{
+    width:100%;
+    height:33%;
+    display:flex;
+    padding-left:40px;
+}
+
+
+.section.sign-in{
+    height:34%;
+    flex-direction:column;
+}
+
+/*.sign-in{
+    background-color: white;
+    box-shadow:0px 1px 1px black;
+}*/
+
+.sign-in {
+    background-color: white;
+    border-radius: 8px; /* optional, for smoother corners */
+    box-shadow: 
+        0 -2px 4px rgba(0, 0, 0, 0.08),  /* subtle top shadow */
+        0 4px 8px rgba(0, 0, 0, 0.2);     /* slightly stronger bottom shadow */
+
+}
+.form-row{
+    display:flex;
+    flex-direction:row;
+
+}
+
+.form-box input[type='text'],
+.form-box input[type='tel'],
+.form-box input[type='email'],
+.form-box input[type='password']{
+    background-color:#FFFEFE;
+    border:1px solid #D6D9DC;
+    border-radius:3px;
+}
+.form-box{
+    display:flex;
+    flex-direction:column;
+}
+
+.head-box{
+    display:flex;
+    align-items:end;
+    flex-direction:row;
+    color:Black;
+    font-size:25px;
+    padding-bottom:25px;
 }
 
 
@@ -56,5 +128,5 @@ body{
 #contentbox{
     width:65%;
     height:auto;
-    background-color: blue;
+    background-color: #F9FAFB;
 }
